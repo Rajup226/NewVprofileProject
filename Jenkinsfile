@@ -24,12 +24,11 @@ pipeline{
             steps {
                sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=~/.m2/repository'
             }       
-
 }
-    }
     stage('UNIT TEST'){
             steps {
                 sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=~/.m2/repository test'
             }
         }    
+}
 }
