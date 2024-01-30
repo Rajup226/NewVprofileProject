@@ -39,6 +39,7 @@ pipeline{
           
 		  environment {
              scannerHome = tool "${SONARSCANNER}"
-          }   
+          }
+        }   
 }
 }
