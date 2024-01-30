@@ -23,7 +23,7 @@ pipeline{
          SONARSERVER = 'sonarserver'
          SONARSCANNER = 'sonarscanner'
     }
-ss
+
     stages {
         stage('Build') {
             steps {
