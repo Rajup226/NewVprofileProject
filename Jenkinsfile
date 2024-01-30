@@ -1,5 +1,3 @@
-
-
 pipeline{
     agent any
     tools {
@@ -25,11 +23,11 @@ pipeline{
         stage('Build') {
             steps {
                sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=~/.m2/repository'
-            }
-        
+            }       
+
 }
     }
-    stage('UNIT TEST') {
+    stage('UNIT TEST'){
             steps {
                 sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=~/.m2/repository test'
             }
